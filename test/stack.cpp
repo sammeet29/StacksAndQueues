@@ -15,7 +15,7 @@ bool Stack::push(int const value)
 }
 
 int Stack::peek()
-{   
+{
     if(m_top == 0)
     {
         return -1;
