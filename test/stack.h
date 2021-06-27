@@ -23,7 +23,14 @@ public:
     /// @brief Pushes an integer value to the top of the stack.
     bool push(int const value);
     
+    /// @brief Pops the integer at the top of the stack
+    /// @return Value at the top of the stack
+    /// @remark Returns -1 if the stack is empty
     int pop();
+
+    /// @brief Tells the value at the top of the stack
+    /// @return Value at the top of the stack
+    /// @remark Returns -1 if the stack is empty
     int peek();
 
     /// @brief Clears the stack. 
@@ -31,6 +38,12 @@ public:
     /// @remark This doesn't delete the data, it just resets the stack pointer
     /// to the start.
     void clear();
+    
+    /// @brief Tells if the stack is empty.
+    bool is_empty();
+
+    /// @brief Tells is the stack is full.
+    bool is_full();
 
     /// @brief Tells the amount of stack used.
     constexpr unsigned int size()
